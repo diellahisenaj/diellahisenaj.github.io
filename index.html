@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diella Hisenaj - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#cases" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="logo">Diella Hisenaj</div>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#cases">Cases</a>
+            <a href="#contact">Contact me</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="welcome-layer">
+            <p class="welcome-text welcome-behind">Welcome</p>
+            <p class="welcome-text welcome-front">Welcome</p>
+        </div>
+                <div class="text-container">
+            
+            <div class="description">
+                <h1>I'm a multidiscplinary designer based in rainy <strong>Malmö</strong> and sunny <strong>Sydney</strong>.
+                    My work is mainly focused on <strong>branding, UI/UX and graphic design</strong>.</h1>
+            </div>
+
+            <div class="cta-group">
+                <a href="#cases" class="btn btn-primary">My cases</a>
+                <a href="#contact" class="btn btn-secondary">Contact me</a>
+            </div>
+
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <!-- Slides -->
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="images/Red.cherry.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/Red.eye.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/Red.goo.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/red.hand.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/Red.headlights.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/Red.housetop.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/red.escape.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/Red.lanterns.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="images/Red.silk.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="note-section">
+    <p class="note-eyebrow">Note</p>
+    <p class="note-text">
+        This portfolio is designed for fast scanning. <br>
+        Based on user research and recruiter insights, the structure and navigation
+        are intentionally shaped to communicate key information within the first
+        10 seconds.
+    </p>
+    <p class="note-source">
+        Source: aggregated insights from recruiter discussions on LinkedIn
+    </p>
+</section>
+
+
+<section class="cases-section" id="cases">
+    <div class="cases-grid">
+
+<a href="c2.case.html" class="case-card">
+
+  <div class="case-meta">
+    <span class="case-tag">E-commerce · B2B</span>
+    <h3>Concept2 Sweden</h3>
+    <p class="case-summary">
+      Migration from Shopify to WordPress/WooCommerce with a focus on
+      automation, performance and scalable B2B sales.
+    </p>
+  </div>
+
+  <div class="case-cta">View case</div>
+</a>
+
+
+        <a href="#" class="case-card">
+            <div class="case-meta">
+                <span class="case-tag">Editorial · UX</span>
+                <h3>Labise Restaurant</h3>
+                <p class="case-summary">
+                    UX-focused WordPress refinement where visual storytelling
+                    shifted from architecture to what guests actually come for: the food.
+                </p>
+            </div>
+            <div class="case-cta">Coming on 10/2/25</div>
+        </a>
+
+    </div>
+</section>
+
+<section class="contact-block" id="contact">
+  <p class="contact-item">
+    <a href="mailto:diella_hisenaj@live.se">DIELLA_HISENAJ@LIVE.SE</a>
+  </p>
+  <p class="contact-item">
+    <a href="tel:+46413540043">0413 540 043</a>
+  </p>
+</section>
+
+
+
+   <script>
+
+
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentIndex].classList.add('active');
+
+        currentIndex = (currentIndex + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 1000);
+    </script> 
+
+
+</body>
+</html>
